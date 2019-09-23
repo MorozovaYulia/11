@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int p, next, n, N, s;
+    n = 2;
+    p = 0;
+    next = 1;
+    cin >> N;
+    while (next != N) {
+        n++;
+        s = next;
+        next += p;
+        p = s;
+    }
+    cout << n << endl;
+}
