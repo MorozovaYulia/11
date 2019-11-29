@@ -2,16 +2,16 @@
 using namespace std;
 int main()
 {
-    int p, next, n, N, s;
+    int p, t, n, N, s;
     n = 2;
     p = 0;
-    next = 1;
+    t = 1;
     cin >> N;
-    while (next != N) {
+    while (t!= N) {
         n++;
-        s = next;
-        next += p;
+        s = t;
+        t += p;
         p = s;
     }
-    cout << n << endl;
+    cout << n;
 }
